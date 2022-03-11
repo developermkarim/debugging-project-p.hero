@@ -80,13 +80,30 @@
 
         <!-- Some important Question with answer -->
 
-        <section>
-            <div class="first-question">
-                <p>When Dave asks HAL to open the pod bay door, HAL answers: <q>I'm sorry, Dave. I'm afraid I can't do that.</q></p>
+        <section class="container text-center">
 
+            <div class="first-question">
+                <p>How javascript Run ?</p>
             </div>
-            <div class="first-question"></div>
-            <div class="first-question"></div>
+            <div class="first-answer">
+                <q>javascript is not like C, C++ or other compiled based language but an interpreted one.We don't need to use any compiler machine(like C, C++ to compile code) to send the js source code in browser.It is an automaticlly interpreted and run in web browser.Every Web browser has their own Engine(e.g. V8 engine for chrome). To wrap up, Javascript works : Source Code to Baseline Compiler to bytecode to Interpreter to Binary to CPU</q>
+            </div>
+<br>
+
+            <div class="second-question">
+                <p>what is the difference between localstorage and sessionstorage?</p>
+            </div>
+            <div class="second-answer">
+                <q> They both are web storage API. differences and similarities of them:
+                    1. Local storage stores data but it has no expiration.But Session storage data is expired and it is lost when browser tab is closed.
+                    2.They both stores keys and values in browser by adding setItem() and GetItem() removeItem() and ClearItem()
+                    3. They have a limitation of size about 5 MB.
+                    4. The values are set by only strings.
+                    5. they are also window objects like history and cookies.
+                    6. We can see the storage of them by clicking inspect elements then appication tab.
+                </q>
+            </div>
+
         </section>
 
         <footer></footer>
