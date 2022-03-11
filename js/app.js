@@ -129,7 +129,8 @@ const createPost = (post) => {
                   <span class="post__date-time">30 minutes ago</span>
                 </div>
               </div>
-      `;
+      `
+      ;
     return div;
 };
 
@@ -145,10 +146,14 @@ const showPosts = (posts) => {
 
 const displayLikedPosts = () => {
     const likedPosts = getLikedPosts();
+  // console.log(likedPosts);
     likedPosts.forEach((post) => {
+      console.log(post);
         const div = createPost(post);
         document.getElementById( "liked" ).appendChild(div);
+        
     });
+    
 };
 
 const displayReportedPosts = () => {
